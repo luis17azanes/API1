@@ -1,17 +1,16 @@
 from fastapi import FastAPI
-
 app=FastAPI()
-
 @app.get("/")
 def index():
-    return "Hola a todos, quieres saber de perritos"
-@app.get("/Perrito/{num}")
-def perrito(num):
-    perritos={
-    "1": "Chihuahua",
-    "2": "Pitbul"
+    return"hola a todos, ¿quieres saber sobre Smart Cities?"
+@app.get("/SmartCity/{num}")
+def sc(num):
+    smart={
+    "1": "Internet de las cosas",
+    "2": "Gestion de recursos"
+    "3": "Movilidad sostenible"
     }
-    return (perritos[num]) 
+    return (smart[num]) 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):
     try:
