@@ -7,7 +7,7 @@ def index():
 def sc(num):
     smart={
     "1": "Internet de las cosas",
-    "2": "Gestion de recursos"
+    "2": "Gestion de recursos",
     "3": "Movilidad sostenible"
     }
     return (smart[num]) 
